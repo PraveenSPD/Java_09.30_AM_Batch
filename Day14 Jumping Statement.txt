@@ -1,0 +1,209 @@
+Jumping Statement :-
+====================
+	Break  :-
+       --------	
+		==>It is used for terminating(stop) our loop based on certain given condition.
+	        ==>simply to say,it will stop the process.
+
+	When and Where to use :-
+	========================
+		The condition is satisfied not more to do anything.That Time We use "break".
+
+	Where to use :-
+	===============
+		It is used in selection statements(if,else if,else) and mainly it is used in "switch".
+
+
+
+
+	Continue :-
+	---------		
+		==>it is skipped the particular execution based on your given condition.But it will not terminate the loop.
+
+Some Example program for break & continue :-
+===========================================
+
+ 1.break (recommended to try this example to be first in while loop)
+
+	  for(int i =0;i<=10;i++) {
+		if(i>5) {
+		   break;
+		}
+	  System.out.println(i);
+	}
+
+Explanation for this above program :-
+--------------------------------------
+		In normally the loop will be terminated when the given condition is to be false.
+		But,while using "break" for giving some condition to terminate our loop.
+		That means,the loop is not more to execute for i>5; it will terminate the loop when the i value is greater than 5.
+
+
+ 2.continue 
+	    for(int i =0;i<=10;i++) {
+		if(i<5) {
+		  continue;
+		}
+	     System.out.println(i);
+	    } 
+output :-
+==========
+	5 6 7 8 9 10
+
+Explanation for this above program :-
+-------------------------------------
+		continue is used for skipping the values based on our certain given conditon.
+		In this program,I use continue to skipped the value lesser than 5.
+
+Try this :-
+==========
+	program for using logical operators 
+
+
+Progarm for using break & continue in single program :-
+=======================================================
+	Scenario :-
+	----------
+		=>you have to collect any number at runtime but the number is not to below 30.
+		=>If the given number is to be below 30.The value is to be skipped and again to collect.
+		=>When the user enter the value above 30.That the time our program will be stop. 
+
+Note :-You have to must use "while loop".Because of,you are not exactly known when the user enter the correct value.
+
+
+
+switch :-
+========
+
+what is switch ?
+----------------
+	It is a operator is used to switch a particular variable and do selected performance to be given in that variable.
+
+		ex program :- for how to switch a particular variable.
+				
+			String fan = "off";
+			String tv  = "on";
+			String ac  = "power off";
+
+	Scenario :- I want to turn "on" the fan.
+
+		Program for the above Scenario :-
+		----------------------------------
+			
+			First we have to switch the fan variable.
+			After do the performed action.
+
+		switch(fan) {
+
+		 case "on" : {
+			System.out.println("The Fan is Currently ON");
+			}
+		 case "off" : {
+			System.out.println(The Fan is currently Off);
+			}
+		 case "power off" : {
+			System.out.println("No Power");
+			}
+
+		}
+
+If you run the program :- The output is 
+				The Fan is Currently ON
+				The Fan is Currently Off
+				No Power.
+
+see the output,I only want the fan is "on" but when the given case is to be true the other cases will be executed subsequently.
+Because of switch will executed the case is to be true and also it will execute other below cases without checking.
+
+So,What can we need ?
+=====================
+		This time we must need "break".
+		"break" is used for breaking the switch process when the condition is satisfied not to more any of them.
+
+
+	Now see the program with using "break" :-
+	==========================================
+
+		switch(fan) {
+
+		 case "on" : {
+			System.out.println("The Fan is Currently ON");
+			break;
+			}
+		 case "off" : {
+			System.out.println(The Fan is currently Off);
+			break;
+			}
+		 case "power off" : {
+			System.out.println("No Power");
+			break;
+			}
+
+		}
+
+		output :-
+		---------
+			The Fan is Currently ON
+
+
+ShortCut for Creating "switch case "
+------------------------------------
+		=> Type switch and do ctrl+space the suggestion will shown.
+		=> select the below mentioned thing :-
+			  	
+			switch(key) {
+
+			 case Value : 
+				break;
+			 default :
+				break;
+
+			  }
+	
+	
+	Note :-  key = variable
+		 value = Variable value
+
+
+
+One Important Interview Question to must Known for "switch"
+==========================================================
+
+Question :-
+------------
+	If switch can support String & char ?
+
+	    Ans :-  Yes
+
+Question :-
+------------
+	If it is Yes,when will support ?
+
+	    Ans :- String & char will support above version 1.7 not to below.
+
+Note :- "switch" will  not support double.
+
+
+
+Try this Progarm :-
+==================
+
+create a variable month but the Variable value is to be collected in runtime.
+
+
+
+		ex demo :-
+
+			switch(month) {
+			  case "jan" : {
+			    System.out.println("Republic day");
+			     break;
+				}
+			   
+			}
+
+
+
+
+
+		     
